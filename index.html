@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Scrapbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="book">
+        <!-- Cover Page Hain ye-->
+        <div class="page cover">
+            <div class="content">
+                <h1>Happy Birthday! My Dear</h1>
+            </div>
+        </div>
+
+        <!-- Form Page hain ye -->
+        <div class="page form-page">
+            <div class="content">
+                <h2>Add a Memory</h2>
+                <form id="addMemoryForm">
+                    <input type="text" id="senderName" placeholder="Your Name" required><br>
+                    <textarea id="messageText" placeholder="Your Message" required></textarea><br>
+                    <input type="file" id="imageUpload" accept="image/*"><br>
+                    <button type="button" onclick="addPage()">Add my Memory</button>
+                </form>
+                <button class="prev-btn">Previous</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
